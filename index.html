@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2 class="js-clock"></h2> 
+        <div class="weather">
+          <p class="location"></p>
+          <p class="temperature"></p>
+        </div>
+      </div>
+      <div class="main">
+        <div class="login">
+          <h2>Login</h2>
+          <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <div class="todo">
+          <h2>Todo List</h2>
+          <form>
+            <label for="todo">Add Todo:</label>
+            <input type="text" id="todo" name="todo">
+            <button type="submit">Add</button>
+          </form>
+          <ul class="todo-list"></ul>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
