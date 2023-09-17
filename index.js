@@ -36,7 +36,7 @@ function showPosition(position) {
     .then(response => response.json())
     .then(data => {
       locationTitle.textContent = data.name;
-      temperatureTitle.textContent = `${data.main.temp/10}°C`;
+      temperatureTitle.textContent = `${(data.main.temp/10).toFixed(1)}°C`;
     })
     .catch(error => {
       locationTitle.textContent = "Unable to retrieve weather data.";
